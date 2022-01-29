@@ -19,6 +19,7 @@ DISCORD_TOKEN=
 CLIENT_ID=
 CLIENT_SECRET=
 ```
-##Commands/Usage
+
+## Commands/Usage
 - `/setchannel` Sets the channel this command is mentioned in and initializes the feed (must be called again if the feed is stopped)
 - `/setchannel stop` Stops the feed
