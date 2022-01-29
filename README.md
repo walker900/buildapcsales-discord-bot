@@ -9,16 +9,16 @@
 ```
 pip install nextcord python-dotenv asyncpraw
 ```
-### Register a script application on Reddit [here](https://www.reddit.com/prefs/apps) and note the client ID and client secret keys
-### Create a new bot application on Discord [here](https://discord.com/developers/applications) and note the bot token key & copy the invite link URL to add the bot to your server
+#### Register a script application on Reddit [here](https://www.reddit.com/prefs/apps) and note the client ID and client secret keys
+#### Create a new bot application on Discord [here](https://discord.com/developers/applications) and note the bot token key & copy the invite link URL to add the bot to your server
 
 ### Configure the keys as environment variables in the same directory.
-#### .env
+##### .env
 ```
 DISCORD_TOKEN=
 CLIENT_ID=
 CLIENT_SECRET=
 ```
 ##Commands/Usage
-- `/setchannel` Sets the channel this command is mentioned in and initializes the feed. Must be called again if the feed is stopped.
+- `/setchannel` Sets the channel this command is mentioned in and initializes the feed (must be called again if the feed is stopped)
 - `/setchannel stop` Stops the feed
