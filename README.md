@@ -10,7 +10,7 @@
 pip install nextcord python-dotenv asyncpraw
 ```
 #### Register a script application on Reddit [here](https://www.reddit.com/prefs/apps) and note the client ID and client secret keys
-#### Create a new bot application on Discord [here](https://discord.com/developers/applications) and note the bot token key & copy the invite link URL to add the bot to your server
+#### Create a new bot application on Discord [here](https://discord.com/developers/applications) and note the bot token key & copy the invite link URL to add the bot to your server if needed
 
 ### Configure the keys as environment variables in the same directory.
 ##### .env
