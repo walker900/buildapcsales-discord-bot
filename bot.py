@@ -1,4 +1,6 @@
 import os
+import time
+from datetime import datetime
 from dotenv import load_dotenv
 import nextcord
 from nextcord.ext import commands, tasks
@@ -28,9 +30,10 @@ def main():
 
     @tasks.loop(seconds=30)
     async def fetch_reddit(ctx):
-        subreddit = await reddit.subreddit("all")
+        subreddit = await reddit.subreddit("buildapcsales")
         async for submission in subreddit.stream.submissions(skip_existing=True):
-            await ctx.send(submission.title)
+            embed = nextcord.Embed(title = submission.title, url = "https://reddit.com" + submission.permalink, timestamp = datetime.utcnow())
+            await ctx.send(embed=embed)
 
     client.run(os.getenv("DISCORD_TOKEN"))
 
