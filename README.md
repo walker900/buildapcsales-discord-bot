@@ -23,3 +23,5 @@ CLIENT_SECRET=
 ## Commands/Usage
 - `/setchannel` Sets the channel this command is mentioned in and initializes the feed (must be called again if the feed is stopped)
 - `/setchannel stop` Stops the feed
+
+### Bot invite link if needed [here](https://discord.com/api/oauth2/authorize?client_id=935682293207535677&permissions=8&scope=bot).
